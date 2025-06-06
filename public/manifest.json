@@ -10,7 +10,7 @@
   "short_name": "StaticsDiary",
   "theme_color": "#5C6BC0",
   "description": "Track your daily income and expenses with StaticsDiary. Efficiently manage your personal finances, record transactions, and view insightful summaries.",
-  "orientation": "any",
+  "orientation": "portrait",
   "background_color": "#F4F7F9",
   "prefer_related_applications": false,
   "display_override": [
