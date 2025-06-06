@@ -115,7 +115,7 @@
       "short_name": "Summary",
       "description": "View your financial summary",
       "url": "/#overview",
-      "icons": [{ "src": "icons/shortcut-view-summary-96x96.png", "sizes": "96x96" }]
+      "icons": [{ "src": "icons/icon-96x96.png", "sizes": "96x96" }]
     }
   ]
 }
