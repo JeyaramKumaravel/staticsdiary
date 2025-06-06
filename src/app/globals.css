@@ -1,0 +1,124 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  line-height: 1.65; /* Slightly increased line-height for body */
+}
+
+@layer base {
+  :root {
+    /* Light Theme - Vibrant & Clean */
+    --background: 210 30% 97%; /* Lighter, cooler bluish-gray */
+    --foreground: 220 15% 25%; /* Deeper cool dark gray */
+    
+    --card: 210 25% 99%; /* Very light cool off-white, almost white */
+    --card-foreground: 220 15% 22%;
+    
+    --popover: 210 25% 99%;
+    --popover-foreground: 220 15% 22%;
+    
+    --primary: 225 75% 60%; /* Vibrant, slightly softer Blue */
+    --primary-foreground: 225 20% 98%; /* Very light blue/white for contrast */
+    
+    --secondary: 190 60% 95%; /* Soft light cyan/mint */
+    --secondary-foreground: 190 50% 30%; /* Darker cyan for text on secondary */
+    
+    --muted: 210 25% 94%; /* Muted cool gray, slightly darker than card */
+    --muted-foreground: 210 15% 45%; 
+    
+    --accent: 165 70% 45%; /* Vibrant Teal */
+    --accent-foreground: 165 20% 98%; /* Very light teal/white */
+    
+    --destructive: 0 75% 60%; /* Bright, clear red */
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 210 20% 90%; /* Slightly more visible cool border */
+    --input: 210 25% 96%; /* Input background, distinct from card */
+    --ring: 225 75% 55%; /* Ring color, related to primary Blue */
+
+    --chart-1: 225 75% 60%; /* Primary Blue */
+    --chart-2: 165 70% 45%; /* Accent Teal */
+    --chart-3: 35 95% 58%;  /* Bright Orange */
+    --chart-4: 310 70% 60%; /* Vivid Magenta/Pink */
+    --chart-5: 130 60% 50%; /* Leaf Green */
+
+    --radius: 0.75rem;
+
+    /* Sidebar specific colors */
+    --sidebar-background: 215 28% 95%; /* Light cool gray for sidebar */
+    --sidebar-foreground: var(--foreground);
+    --sidebar-primary: var(--primary);
+    --sidebar-primary-foreground: var(--primary-foreground);
+    --sidebar-accent: var(--accent);
+    --sidebar-accent-foreground: var(--accent-foreground);
+    --sidebar-border: 210 20% 88%; 
+    --sidebar-ring: var(--ring);
+  }
+
+  .dark {
+    /* Dark Theme - Rich & Contrasted */
+    --background: 220 25% 8%; /* Even deeper cool blue/gray */
+    --foreground: 210 25% 90%; /* Lighter cool gray text */
+
+    --card: 220 22% 12%; 
+    --card-foreground: 210 25% 88%;
+
+    --popover: 220 22% 13%;
+    --popover-foreground: 210 25% 88%;
+
+    --primary: 225 70% 68%; /* Lighter, vibrant Blue for dark mode */
+    --primary-foreground: 225 15% 15%; /* Dark blue for contrast */
+
+    --secondary: 190 30% 20%; /* Dark muted cyan/mint */
+    --secondary-foreground: 190 60% 80%; /* Light cyan text */
+
+    --muted: 210 20% 22%;
+    --muted-foreground: 210 15% 65%;
+
+    --accent: 165 65% 58%; /* Lighter, vibrant Teal for dark mode */
+    --accent-foreground: 165 15% 15%; /* Dark teal for contrast */
+
+    --destructive: 0 65% 55%; /* Slightly less intense red for dark mode */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 18% 25%;
+    --input: 210 20% 18%;
+    --ring: 225 70% 65%; 
+    
+    --chart-1: 225 70% 68%; 
+    --chart-2: 165 65% 58%; 
+    --chart-3: 35 90% 60%; 
+    --chart-4: 310 65% 65%; 
+    --chart-5: 130 55% 55%; 
+
+    --sidebar-background: 220 20% 11%; /* Darker sidebar background */
+    --sidebar-foreground: var(--foreground);
+    --sidebar-primary: var(--primary);
+    --sidebar-primary-foreground: var(--primary-foreground);
+    --sidebar-accent: var(--accent);
+    --sidebar-accent-foreground: var(--accent-foreground);
+    --sidebar-border: 210 18% 23%; 
+    --sidebar-ring: var(--ring);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .card-shadow {
+    box-shadow: 0 5px 15px -3px rgb(0 0 0 / 0.08), 0 3px 8px -3px rgb(0 0 0 / 0.08);
+  }
+  .dark .card-shadow {
+    box-shadow: 0 5px 15px -3px rgb(0 0 0 / 0.2), 0 3px 8px -3px rgb(0 0 0 / 0.2);
+  }
+}
